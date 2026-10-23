@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog | Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>📚 Library System</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Book Catalog</a>
+        </nav>
+    </header>
+
+    <main class="catalog">
+        <h1>Our Book Collection</h1>
+        <p>Search for a book by its title or author.</p>
+
+        <section class="filters">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search books or authors..."
+                aria-label="Search books or authors"
+            >
+
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="All">All Categories</option>
+                <option value="Programming">Programming</option>
+                <option value="Education">Education</option>
+                <option value="Literature">Literature</option>
+            </select>
+
+            <select id="statusFilter" aria-label="Filter by availability">
+                <option value="All">All Statuses</option>
+                <option value="Available">Available</option>
+                <option value="Borrowed">Borrowed</option>
+            </select>
+        </section>
+
+        <p id="resultCount" aria-live="polite"></p>
+
+        <section id="bookGrid" class="book-grid">
+            <!-- JavaScript displays the books here. -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Library Management System | System Analysis & Design</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
